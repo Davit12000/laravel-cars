@@ -26,20 +26,20 @@ class CarRequest extends FormRequest
                 'brand' => 'sometimes|required|string|max:100',
                 'model' => 'sometimes|required|string|max:100',
                 'year' => 'sometimes|required|integer|min:1886|max:' . date('Y'),
-                'color' => 'sometimes|string|max:50',
-                'used' => 'sometimes|boolean',
+//                'color' => 'sometimes|string|max:50',
+//                'used' => 'sometimes|boolean',
                 'price' => 'sometimes|numeric|min:0',
-                'fuel_type' => 'sometimes|in:gasoline,diesel,electric,hybrid',
+//                'fuel_type' => 'sometimes|in:gasoline,diesel,electric,hybrid',
             ];
         }
         return [
             'brand' => 'required|string|max:100',
             'model' => 'required|string|max:100',
             'year' => 'required|integer|min:1886|max:' . date('Y'),
-            'color' => 'required|string|max:50',
-            'used' => 'required|boolean',
+//            'color' => 'required|string|max:50',
+//            'used' => 'required|boolean',
             'price' => 'required|numeric|min:0',
-            'fuel_type' => 'required|in:gasoline,diesel,electric,hybrid',
+//            'fuel_type' => 'required|in:gasoline,diesel,electric,hybrid',
         ];
     }
 

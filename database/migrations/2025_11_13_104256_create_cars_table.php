@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('brand');
             $table->string('model');
             $table->integer('year');
-            $table->string('color');
-            $table->boolean('used')->default(false);
+//            $table->string('color');
+//            $table->boolean('used')->default(false);
             $table->decimal('price', 10, 2)->nullable();
-            $table->enum('fuel_type', ['gasoline', 'diesel', 'electric', 'hybrid'])->default('gasoline');
+//            $table->enum('fuel_type', ['gasoline', 'diesel', 'electric', 'hybrid'])->default('gasoline');
             $table->timestamps();
         });
     }
